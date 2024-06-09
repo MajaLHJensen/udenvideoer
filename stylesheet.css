@@ -1,0 +1,635 @@
+*{
+    padding: 0px;
+    margin: 0;  
+    font-family: "basic-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Navbar */
+/* !important betyder at den kode er vigtigst og derfor tager den fat i den */
+.navbar{
+    background-image: linear-gradient(to right,#8d7d70,#A4907C, #C8B6A6) !important; 
+}
+
+/* Tekst i navbaren bliver ændret til hvid */
+.navbar a{
+    color: white !important;
+}
+
+/* Logo i navbaren */
+/* Giver logoet en størrelse og ved at bruge px så det forbliver den samme størrelse */
+.container-fluid img{
+    max-width: 50px;
+    height: auto;
+}
+
+/* Ændre farven i burgermenu ikonet */
+.navbar-toggler, .toggler-icon{
+    color: white !important; 
+    border-color: #fff;
+}
+
+/* Dropdown menu er givet et farve */
+.dropdown-menu{
+    background-image: linear-gradient(to right,#8d7d70,#A4907C, #C8B6A6) !important;
+    border-color: white;
+}
+
+.dropdown-menu a:hover{
+    background-color: #A4907C;
+}
+/* Navbar */
+
+
+
+/* Footer */
+/* Footer containeren er givet en størrelse og farve */
+.footer-container {
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to right,#8d7d70,#A4907C, #C8B6A6);
+}
+
+/* Ikonerne i footeren bliver centreret */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Links til andres hjemmeside */
+/* Containeren får en farve og placering */
+.andreLinks{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right,#8d7d70,#A4907C, #C8B6A6) !important; 
+    padding-left: 30%;
+}
+
+/* Link til andres hjemmeside logoer bliver sat på række */
+.links img{
+    display: flex; 
+    display: inline-block;
+    padding-bottom: 10px; 
+    width: 20%;
+}
+
+/* Ikonerne i footeren får en størrelse og farve */
+.social-icons a i {
+    font-size: 30px;
+    color:#ffffff ;
+    opacity: 0.9;
+    padding-left: 10px;
+}
+
+/* Footer ikonerne får en hoover effekt */
+.social-icons a i:hover{
+    color: #C8B6A6;
+}
+
+/* Design og placering af copyright footer i midten*/
+.footer-bottom {
+    background-image: linear-gradient(to right,#8d7d70,#A4907C, #C8B6A6);
+    text-align: center;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Teksten i footeren får en farve */
+.footer-bottom p {
+    color: white;
+}
+/* Footer */
+
+
+
+/* Forside */
+/* Container der holder på Forside billedet bliver givet en størrelse og gjort til baggrund billede*/
+.header{
+    min-height: 60vh;
+    width: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url(billeder/baggrundsbillede.png); /* Forside billede */
+}
+
+/* Teksten på forside billedet bliver centreret og givet en farve*/
+.text-box {
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* Overskriften på forside billedet får en størrelse og farve */
+.text-box h1 {
+    font-size: 45px;
+    color: white;
+}
+
+/* Den mindre tekst på forside billedet for en størrelse, farve og bliver placeret i midten af siden */
+.p2 {
+    margin: 10px 0 20px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/* Placere og designer knapperne på forsidebilledet */
+.hero-btn{
+    display: inline-block; /* Bliver sat på samme række */
+    text-decoration: none;
+    color: white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #C8B6A6;
+    position: relative;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+/* Pil knap, der ikke skal vise sig i mobil størrelse */
+.arrow button{
+    display: none;
+}
+
+/* Runde smykke billeder på forsiden får en størrelse*/
+.forsideBillederSmykker img{
+    width: 55%;
+}
+
+/* Tekst (smykker) over billederne bliver placeret i midten*/
+.forsideTekst{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 5px;
+    width: 100%;
+}
+
+/* Tekst (smykker) over billederne får en størrelse */
+.forsideTekst h4{
+    font-size: 15px;
+}
+
+/* Runde billeder af smykker bliver centreret */
+.forsidebillede1, .forsidebillede2{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 5%;
+}
+
+/* Runde billeder af smykker og tekst over dem links bliver designet*/
+.forsidebillede1 a, .forsidebillede2 a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Runde billeder af smykker på forsiden */
+.forsidebillede1 img, .forsidebillede2 img{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+
+/* Kontaktformular */
+/* Kontaktformular får en størrelse */
+.box {
+    width: 500px;
+    padding-bottom: 50px;
+}
+
+/* Tekst input når du skriver i kontaktformularen bliver designet og placeret */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ebe5e5;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    justify-content: center;
+    display: flex;
+}
+  
+/* Submit knappen i kontaktformularen bliver placeret og givet et størrelse og farve */
+input[type=submit] {
+    background-color: #8d7d70;
+    color: white;
+    padding: 12px 82px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+  
+/* Submit knappen i kontaktformularen bliver placeret og givet et størrelse og farve */
+input[type=submit]:hover {
+    background-color: #A4907C;
+}
+  
+/* Tekst felterne inde i kontaktformularen får en størrelse og plaseres */
+.container {
+    width: 80%; 
+    min-height: 10vh;
+    border-radius: 5px;
+    background-color: #cccfcc;
+    padding: 32px;
+    justify-content: center;
+    background-color: #C8B6A6;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Hele kontaktformularen og tekst ovenover, bliver der brugt flex wrap til for at teksten wrapper sig om formularen */
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Teksten under kontakt os bliver centreret */
+.kontaktTekst p{
+    align-items: center;
+}
+
+.kontaktTekst h2{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+/* Tekst ovenover kontaktformularen bliver placeret i midten ved siden af kontaktformularen */
+.kontaktTekst, .kontaktIndhold{
+  position: relative;
+  min-height: 5vh;
+  display: flex;
+  padding: 15px 30px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.kontaktIndhold h3{ 
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 5px;
+}
+/* Kontaktformular */
+
+
+
+/* Cards */
+/* Cards container bliver splaseret ved at bruge wrap*/
+.containerC {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+/* Hver card bliver designet og placeret sammen */
+.item, .item2, .item3 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px); /* 1 item pr row ved default */
+    box-sizing: border-box;
+}
+
+/* Cards billederne får en størrelse */
+.item img, .item2 img, .item3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Cards teksten bliver designet og placeret */
+.item p, .item2 p, .item3 p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+/* Cards */
+
+
+
+.column{
+    padding: 0 20px;
+}
+
+.row{
+    padding: 0 20px;
+    padding-top: 20px;
+    margin: 12px;
+}
+
+.row h2{
+    padding-left: 17px;
+}
+
+/* Om os underside */
+.omOs body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Placere om os sectionen */
+.omOs{
+    width: 80%; /* Bestemmer hvor meget mellemrum der skal være i venstre side */
+    padding-left: 20px;
+}
+  
+/* Om os billedet */
+.imageom{
+    max-width: 100%; /* Ændre billedet størrelse */
+    padding-bottom: 30px;
+}
+
+/* Om os ikonerne bliver placeret på siden */
+.icon1, .icon2, .icon3{
+    padding: 0 30px;
+    padding-bottom: 10px;
+
+}
+/* Om os underside */
+
+
+/* Knapperne under halskæder og armånd undersiderne bliver placeret*/
+.knap1armbånd, .knap2halskæde, .knap2armbånd, .knap3armbånd, .knap4armbånd, .knap2halskæde, .knap3halskæde, .knap4halskæde{
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px; 
+    background: #8d7d70;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* Linkesne får fjernet deres dekoration */
+.knap4halskæde a, .knap1armbånd a, .knap2halskæde a, .knap2armbånd a, .knap3armbånd a, .knap4armbånd a, .knap2halskæde a, .knap3halskæde a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Knapperne får hover effekt */
+.knap1armbånd:hover, .knap2halskæde:hover, .knap2armbånd:hover, .knap3armbånd:hover, .knap4armbånd:hover, .knap2halskæde:hover, .knap3halskæde:hover, .knap4halskæde:hover{
+   background: #A4907C;
+}
+
+/* Knappernes hover effekt bliver designet */
+.hero-btn:hover{
+    border: 1px solid rgb(191, 180, 180);
+    transition: 1s;
+    background: transparent;
+    border: 1px solid white;
+}
+
+/*  */
+.p1{
+    font-size: 15px;
+}
+
+
+/* Forsidebillede med tekst på */
+.halskæderDisplay img, .armbåndDisplay img{
+    width: 55%;
+}
+
+/* Overskrift teksten på halskæde og armbånd undersiderne */
+.halskædeTekst, .armbåndTekst{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 5px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.halskædeTekst h4, .armbåndTekst h4{
+    font-size: 17px;
+}
+
+
+/* Container for billederne og knapper på halskæde og armbånd underside */
+/* De bliver centreret */
+.halskædeBillede1, .halskædeBillede2, .halskædeBillede3, .armbåndBillede1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Containerne bliver vist på række */
+.halskædeBillede1 img, .forsidebillede2 img, .halskædeBillede3 img, .armbåndBillede1 img{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Smykke undersiderne */
+/* Tekst overskrift på siderne bliver placeret */
+.tekstUnderside, .tekstUnderside1, .tekstUnderside2, .tekstUnderside3, .tekstUnderside4, .tekstUnderside5{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 5px;
+    width: 100%;
+}
+
+.tekstUnderside h2, .tekstUnderside1 h2, .tekstUnderside2 h2, .tekstUnderside3 h2, .tekstUnderside4 h2, .tekstUnderside5 h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.tekstUnderside h4, .tekstUnderside1 h4, .tekstUnderside2 h4, .tekstUnderside3 h4, .tekstUnderside4 h4, .tekstUnderside5 h4{
+    font-size: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Videoerne på smykke undersiderne får en størrelse og bliver designet */
+video{
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aLink{
+    text-decoration: none;
+    color: black;
+}
+
+/* Media curry for ipad og computer */
+@media screen and (min-width: 768px) {  
+    
+     /* Forside billedet bliver angivet og får en størrelse */
+    .header{
+        min-height: 80vh;
+        width: 100%;
+        background-image: url(billeder/baggrundsbillede.png);
+    }
+    
+    /* video på undersiderne får en størrelse og placering */
+    video{
+        margin-left: 10%;
+        max-width: 70%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+    }
+
+    /* Ikonerne på om os undersiden */
+    .icon1, .icon2, .icon3{
+        padding-top: 60px;
+    }
+
+    .omTekst h2{
+        margin-top: 90px;
+    }
+    /* Om os underside */
+
+    main{
+        justify-content: space-evenly;
+    }
+
+    .kontakt{
+        padding-top: 80px;
+    }
+
+    /* Smykke billederne på forsiden */
+    .forsideBillederSmykker{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .forsidebillede1, .forsidebillede2{
+        width: 50%;
+        position: relative;
+    }
+
+    /* Billeder på forsiden får en størrelse og bliver sat på række sammen */
+    .forsidebillede1 img, .forsidebillede2 img{
+        width: 50%;
+        display: inline-block;
+    }
+
+    .forsideTekst h4{
+        font-size: 20px;
+    }
+
+    .tekstUnderside h2, .tekstUnderside1 h2, .tekstUnderside2 h2, .tekstUnderside3 h2, .tekstUnderside4 h2, .tekstUnderside5 h2 {
+        font-size: 35px;
+    }
+
+    .tekstUnderside h4, .tekstUnderside1 h4, .tekstUnderside2 h4, .tekstUnderside3 h4, .tekstUnderside4 h4, .tekstUnderside5 h4{
+        font-size: 18px;
+        padding-bottom: 15px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .forsideTekst h2, .tekstUnderside1 h2, .tekstUnderside2 h2, .tekstUnderside3 h2, .tekstUnderside4 h2, .tekstUnderside5 h2{
+        font-size: 35px;
+    }
+    
+    .item, .item2, .item3 {
+        width: calc(33% - 40px); /* 3 items per row */
+    } 
+    
+    .text-box h1{
+        font-size: 70px;
+    }
+      
+    .p2{
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    .p1{
+        font-size: 20px;
+    }
+
+    .hero-btn{
+        font-size: 17px;
+        margin-top: 30px;
+    } 
+    
+    .halskæderDisplay, .armbåndDisplay{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .halskædeBillede1, .halskædeBillede2, .halskædeBillede3, .armbåndBillede1{
+        width: 33%;
+        position: relative;
+    }
+
+    /* */
+    .halskædeBillede1 img, .halskædeBillede2 img, .halskædeBillede3 img, .armbåndBillede1 img{
+        width: 65%;
+        display: inline-block;
+    }
+
+    /* Links til andres hjemmeside */
+    .andreLinks{
+        padding-left: 46%;
+    }
+
+    .links img{
+        width: 5%;
+    } 
+    
+    .row {
+        display: flex;
+    }
+  
+    .column {
+        flex: 50%;
+    }
+  
+    .imageom{
+        width: 50%;
+        padding: 30px 30px;
+    }
+
+    .imginfo{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Media curry for kun computer version */
+@media screen and (min-width:1024px){
+    /* Pilen på forsiden bliver placeret i midten nederst */
+    .arrow button{
+        display: block;
+        border: none;
+        background-color: transparent;
+        color: white;
+        padding-left: 49%;
+        padding-bottom: 2%;
+        padding-top: 40%;
+        font-size: 40px;
+    }
+    
+    .item, .item2, .item3 {
+        width: calc(25% - 40px); /* 4 items pr row */
+    }
+}
