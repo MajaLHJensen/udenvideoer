@@ -248,6 +248,7 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 70px;
 }
 
 /* Teksten under kontakt os bliver centreret */
@@ -326,7 +327,7 @@ main{
 
 /* Containeren med om os teksten */
 .row{
-    padding: 0 20px;
+    padding: 0 15px;
     padding-top: 20px;
     margin: 12px;
 }
@@ -354,9 +355,10 @@ main{
 }
 
 /* Om os ikonerne bliver placeret på siden */
-.icon1, .icon2, .icon3{
-    padding: 0 30px;
-    padding-bottom: 10px;
+.icon1{
+    padding: 0 25px;
+    line-height: 3;
+    
 }
 /* Om os underside */
 
@@ -495,8 +497,9 @@ video{
     }
 
     /* Ikonerne på om os undersiden */
-    .icon1, .icon2, .icon3{
-        padding-top: 80px;
+    .icon1{
+        padding-top: 10px;
+        line-height: 5;
     }
 
     .omTekst h2{
@@ -605,7 +608,7 @@ video{
   
     .imageom{
         width: 50%;
-        padding: 30px 50px;
+        padding: 30px 40px;
     }
 
     .imginfo{
@@ -634,5 +637,10 @@ video{
     
     .item, .item2, .item3 {
         width: calc(25% - 40px); /* 4 items pr row */
+    }
+
+    .icon1{
+        padding-top: 80px;
+        line-height: 5;
     }
 }
