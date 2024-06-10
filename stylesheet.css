@@ -319,11 +319,10 @@ main{
 /* Cards teksten bliver designet og placeret */
 .item p, .item2 p, .item3 p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 18px;
     color: #000000;
 }
 /* Cards */
-
 
 
 .column{
@@ -363,7 +362,6 @@ main{
 .icon1, .icon2, .icon3{
     padding: 0 30px;
     padding-bottom: 10px;
-
 }
 /* Om os underside */
 
@@ -422,7 +420,7 @@ main{
 }
 
 .halskædeTekst h4, .armbåndTekst h4{
-    font-size: 17px;
+    font-size: 20px;
 }
 
 
@@ -440,6 +438,11 @@ main{
     margin-bottom: 20px;
 }
 
+/* Billeder af pærene får en størrelse */
+.halskædeBillede1 h3 img, .halskædeBillede2 h3 img, .halskædeBillede3 h3 img, .armbåndBillede1 h3 img{
+    width: 8%;
+}
+
 /* Smykke undersiderne */
 /* Tekst overskrift på siderne bliver placeret */
 .tekstUnderside, .tekstUnderside1, .tekstUnderside2, .tekstUnderside3, .tekstUnderside4, .tekstUnderside5{
@@ -455,7 +458,7 @@ main{
 }
 
 .tekstUnderside h4, .tekstUnderside1 h4, .tekstUnderside2 h4, .tekstUnderside3 h4, .tekstUnderside4 h4, .tekstUnderside5 h4{
-    font-size: 15px;
+    font-size: 18px;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -497,7 +500,7 @@ video{
 
     /* Ikonerne på om os undersiden */
     .icon1, .icon2, .icon3{
-        padding-top: 60px;
+        padding-top: 80px;
     }
 
     .omTekst h2{
@@ -539,7 +542,7 @@ video{
     }
 
     .tekstUnderside h4, .tekstUnderside1 h4, .tekstUnderside2 h4, .tekstUnderside3 h4, .tekstUnderside4 h4, .tekstUnderside5 h4{
-        font-size: 18px;
+        font-size: 20px;
         padding-bottom: 15px;
         padding-left: 10%;
         padding-right: 10%;
@@ -606,12 +609,16 @@ video{
   
     .imageom{
         width: 50%;
-        padding: 30px 30px;
+        padding: 30px 50px;
     }
 
     .imginfo{
         display: flex;
         justify-content: center;
+    }
+
+    .halskædeBillede1 h3 img, .halskædeBillede2 h3 img, .halskædeBillede3 h3 img, .armbåndBillede1 h3 img{
+        width: 7%;
     }
 }
 
