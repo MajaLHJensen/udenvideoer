@@ -66,14 +66,14 @@
     <div class="text-box">
       <h1>Perlepaladset</h1>
       <p class="p2"> <b>Smykke designs </b><br>
-      <p class="p1">"Et smykke er mere end blot en genstand; det er et udtryk for personlighed,  <br>stil og kreativitet, der bæres med stolthed"</p>
+      <p class="p1"> <em> "Et smykke er mere end blot en genstand; det er et udtryk for personlighed,  <br>stil og kreativitet, der bæres med stolthed"</em></p>
       <a href="armbaand.html" class="hero-btn">Armbånd</a>
       <a href="halskaade.html" class="hero-btn">Halskæder</a>
     </div>
 
     <!-- Kør ned knap -->
     <div class="arrow">
-      <button onclick="scrollDown()">  <i class="fa-solid fa-circle-chevron-down" ></i></button>
+      <button onclick="scrollDown()"> <i class="fa-solid fa-circle-chevron-down" ></i></button>
     </div>
     <!-- Kør ned knap -->
   </section>
@@ -148,16 +148,17 @@
     
       <script type="text/javascript">
         window.onload = function() {
+          // tilføjer et klik til din submit knap
           document.getElementById('contactForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
-            // these IDs from the previous steps
             emailjs.sendForm('service_z7vrlks', 'template_h6whz3e', this)
               .then(() => {
                 console.log('SUCCESS!');
                 alert("Din besked er blevet sendt!"); // Giver besked til brugeren at mailen er sendt afsted
               }, (error) => {
                   console.log('FAILED...', error);
+                  alert("Din besked er ikke sendt!"); // Giver besked til brugeren at mailen ikke er sendt afsted
               });
           });
                 }
